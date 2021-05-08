@@ -1,0 +1,30 @@
+{
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "rules": {},
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "globals": {
+    "window": true,
+    "document": true,
+    "WebSocket": true,
+    "BUNDLE": true,
+    "shallow": true,
+    "toJson": true,
+    "mount": true,
+    "render": true
+  },
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config-index": 0
+      },
+      "node": {
+        "moduleDirectory": ["node_modules"]
+      }
+    }
+  }
+}
